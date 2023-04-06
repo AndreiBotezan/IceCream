@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   &__label {
+    position: fixed;
+    top: 12%;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -15,6 +17,8 @@
     color: #ffa5ba;
   }
   &__title {
+    position: fixed;
+    top: 16%;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -27,6 +31,8 @@
   }
 }
 .products-list {
+  position: absolute;
+  top: 44%;
   display: flex;
   gap: 32px;
   &__card-cream {
@@ -45,7 +51,7 @@
   }
 
   &__title {
-    position: absolute;
+    position: relative;
     top: 30%;
     font-family: 'Titan One';
     font-style: normal;
@@ -63,14 +69,17 @@
       display: flex;
       gap: 32px;
       justify-content: center;
+      position: relative;
+      top: 10px;
     }
   }
   &__desc {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 45%;
+    left: 16%;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -109,5 +118,11 @@
       gap: 32px;
       top: -50%;
     }
+  }
+  &__image {
+    display: flex;
+    position: relative;
+    top: 55%;
+    left: 44%;
   }
 }
