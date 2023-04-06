@@ -1,0 +1,151 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --header-base-color: #ffb8ca;
+  --header-circle-color: #ffa5ba;
+  --background-mobile-menu: #e17992;
+  --accent-color: #d41443;
+  --button-white-color: #ffffff;
+  --first-section-color: #e5e5e5;
+  --second-section-color: #fff5f6;
+  --products-card-beige: #f0d1a5;
+  --products-card-green: #c2e297;
+  --primary-text-color: #907e82;
+  --secondary-text-color: #000000;
+  --background: #fafafa;
+  --border-footer-color: #e1e1e1;
+  --markers-reviews-color: #d9d9d9;
+  --background-reviews: #fafafa;
+  --primary-header-color: #ffa5ba;
+  --font-primary: "DM Sans", sans-serif;
+  --font-secondary: "Titan One", sans-serif;
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1280px;
+}
+
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__title {
+  color: red;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+.products__label {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.products__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.products-list {
+  display: flex;
+}
+.products-list__card-cream {
+  background: #ffb8ca;
+  border-radius: 24px;
+  width: 368px;
+  height: 535px;
+}
+.products-list__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 368px;
+  height: 34px;
+  color: #ffffff;
+}
+.products-list__desc {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  width: 245px;
+  height: 106px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.products-list__card-coffee {
+  background: #f0d1a5;
+  border-radius: 24px;
+  width: 368px;
+  height: 535px;
+}
+.products-list__card-shakes {
+  background: #c2e297;
+  border-radius: 24px;
+  width: 368px;
+  height: 535px;
+}/*# sourceMappingURL=index.css.map */
