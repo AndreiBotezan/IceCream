@@ -162,7 +162,7 @@
   }
   &__inner {
     width: 100%;
-    height: calc(100% - 55px);
+    height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,7 +350,8 @@
       border-radius: 50%;
       background-color: var(--button-white-color);
       &:hover {
-        transform: rotate(90deg) scale(1.5);
+        transform: rotate(90deg) scale(1.2);
+        //add color
         transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
@@ -425,7 +426,7 @@
       font-size: 48px;
     }
     &__inner {
-      height: calc(100% - 37px - 68px);
+      height: calc(100% - 100px);
     }
     &__circle {
       width: 534px;
@@ -436,7 +437,7 @@
     &__photo {
       width: 236px;
       height: 557px;
-      bottom: 0;
+      bottom: -5px;
       right: 368px;
       background-image: url('../images/hero-header/icecream236.png');
     }
