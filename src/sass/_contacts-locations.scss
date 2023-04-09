@@ -1,0 +1,227 @@
+.contacts-location-section {
+  background-color: var(--second-section-color);
+  margin-top: 200px; //for DEV only - to be removed in PROD
+}
+
+.contacts-location {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  align-items: center;
+  height: 1520px;
+}
+
+.contacts-location-block {
+  display: flex;
+  flex-direction: column;
+
+  &__type {
+    line-height: 186%;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--button-white-color);
+    background: #f0d1a5;
+    border-radius: 6px;
+    width: 75.1px;
+  }
+}
+
+.contacts-location-block__type--color {
+  background-color: #c2e297;
+  width: 138px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 0px 32px 0px;
+
+  &__title {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 250px;
+  }
+
+  &__time {
+    font-size: 16px;
+    line-height: 186%;
+    color: var(--primary-header-color);
+  }
+
+  &__contact {
+    font-size: 16px;
+    line-height: 183%;
+    color: var(--primary-text-color);
+
+    &:hover {
+      color: var(--main-color-dark);
+    }
+  }
+}
+
+.location--contact {
+  gap: 0px;
+}
+
+.location--borders {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-locations-buttons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 12px;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  width: 198px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--button-white-color);
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+  &__icon {
+    z-index: -1;
+    position: absolute;
+    &__rect {
+      position: absolute;
+    }
+  }
+
+  .button__arrow {
+    right: 35px;
+    top: 19px;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+.button--text-color {
+  color: var(--main-color-dark);
+  .button__arrow {
+    right: 45px;
+    top: 19px;
+    z-index: 1;
+  }
+
+  &:hover {
+    .button__icon__rect {
+      fill: #ecebeb;
+    }
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+}
+
+.grid--location {
+  position: absolute;
+  top: -99px;
+}
+
+.grid--location-size {
+  padding: 40px 40px;
+  background-color: var(--button-white-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 368px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .contacts-location {
+    height: 400px;
+  }
+
+  .grid--location-size {
+    padding: 40px 32px;
+  }
+
+  .grid--location-size {
+    width: 224px;
+  }
+  .grid--location {
+    top: -298px;
+  }
+  .location__description {
+    width: 159px;
+    font-size: 14px;
+    line-height: 166%;
+  }
+  .location__title {
+    font-size: 14px;
+  }
+  .location__time {
+    font-size: 14px;
+  }
+  .location__contact {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .grid--location-size {
+    padding: 40px 32px;
+  }
+
+  .grid--location-size {
+    width: 280px;
+  }
+  .grid--location {
+    top: -298px;
+    flex-direction: column;
+  }
+  .location__description {
+    width: 159px;
+    font-size: 12px;
+    line-height: 166%;
+  }
+  .location__title {
+    font-size: 12px;
+  }
+  .location__time {
+    font-size: 12px;
+  }
+  .location__contact {
+    font-size: 12px;
+  }
+
+  .contacts-locations-buttons {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-location {
+    height: 600px;
+  }
+}
