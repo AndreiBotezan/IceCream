@@ -1,17 +1,3 @@
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-ol {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-inline-start: 0;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -23,10 +9,6 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-section {
-  padding-bottom: 100px;
 }
 
 .grid-container {
