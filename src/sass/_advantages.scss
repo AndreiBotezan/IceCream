@@ -1,0 +1,301 @@
+@import '../sass/common';
+
+.hidden {
+  display: none;
+}
+
+.advantages {
+  background-color: var(--second-section-color);
+  padding-bottom: 87px;
+  padding-left: 30px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__info {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-color-dark);
+  }
+
+  &__description {
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--secondary-text-color);
+    width: 230px;
+  }
+
+  .advantages & {
+    transition-property: transform;
+    transition-duration: 0.33s;
+    transition-timing-function: linear;
+  }
+
+  .advantages:hover &:nth-child(2n + 1) {
+    transform: scale(1.1, 1.1) translate(100px, 5px);
+  }
+
+  .advantages:hover &:nth-child(2n) {
+    transform: scale(1.1, 1.1) translate(10px, -5px);
+  }
+
+  &:nth-child(1)::before {
+    content: '';
+    width: 33px;
+    height: 50px;
+    background-image: url(../images/advantages/mobile/x1/advantages1.png);
+    background-size: 33px 50px;
+    margin-bottom: 16px;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &:nth-child(2)::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/mobile/x1/advantages2.png);
+    background-size: 50px 50px;
+    margin-bottom: 16px;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &:nth-child(3)::before {
+    content: '';
+    width: 44px;
+    height: 50px;
+    background-image: url(../images/advantages/mobile/x1/advantages3.png);
+    background-size: 44px 50px;
+    margin-bottom: 16px;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &:nth-child(1)::before {
+      background-image: url(../images/advantages/mobile/x2/advantages1.png);
+    }
+    &:nth-child(2)::before {
+      background-image: url(../images/advantages/mobile/x2/advantages2.png);
+    }
+    &:nth-child(3)::before {
+      background-image: url(../images/advantages/mobile/x2/advantages3.png);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 250px;
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 4px;
+    }
+  }
+
+  .advantage {
+    gap: 13px;
+
+    &__info {
+      font-size: 48px;
+      line-height: 55px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 24px;
+      width: 180px;
+    }
+
+    .advantages & {
+      transition-duration: 1s;
+    }
+
+    .advantages:hover &:nth-child(2n + 1) {
+      transform: rotate(360deg);
+    }
+
+    .advantages:hover &:nth-child(2n) {
+      transform: rotate(360deg);
+    }
+
+    &:nth-child(1)::before {
+      content: '';
+      width: 33px;
+      height: 50px;
+      background-image: url(../images/advantages/tablet/x1/advantages1.png);
+      background-size: 33px 50px;
+      margin-bottom: 36px;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    &:nth-child(2)::before {
+      content: '';
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/advantages/tablet/x1/advantages2.png);
+      background-size: 50px 50px;
+      margin-bottom: 36px;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    &:nth-child(3)::before {
+      content: '';
+      width: 44px;
+      height: 50px;
+      background-image: url(../images/advantages/tablet/x1/advantages3.png);
+      background-size: 44px 50px;
+      margin-bottom: 36px;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &:nth-child(1)::before {
+        background-image: url(../images/advantages/tablet/x2/advantages1.png);
+      }
+      &:nth-child(2)::before {
+        background-image: url(../images/advantages/tablet/x2/advantages2.png);
+      }
+      &:nth-child(3)::before {
+        background-image: url(../images/advantages/tablet/x2/advantages3.png);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-bottom: 210px;
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 115px;
+    }
+  }
+
+  .advantage {
+    gap: 16px;
+
+    &__info {
+      font-size: 58px;
+      line-height: 66px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 28px;
+      width: 288px;
+    }
+
+    .advantages & {
+      transition-duration: 1s;
+    }
+
+    .advantages:hover &:nth-child(2n + 1) {
+      transform: rotate(360deg);
+    }
+
+    .advantages:hover &:nth-child(2n) {
+      transform: rotate(360deg);
+    }
+
+    &:nth-child(1)::before {
+      content: '';
+      width: 33px;
+      height: 50px;
+      background-image: url(../images/advantages/desktop/x1/advantages1.png);
+      background-size: 33px 50px;
+      margin-bottom: 40px;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    &:nth-child(2)::before {
+      content: '';
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/advantages/desktop/x1/advantages2.png);
+      background-size: 50px 50px;
+      margin-bottom: 40px;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    &:nth-child(3)::before {
+      content: '';
+      width: 44px;
+      height: 50px;
+      background-image: url(../images/advantages/desktop/x1/advantages3.png);
+      background-size: 44px 50px;
+      margin-bottom: 40px;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &:nth-child(1)::before {
+        background-image: url(../images/advantages/desktop/x2/advantages1.png);
+      }
+      &:nth-child(2)::before {
+        background-image: url(../images/advantages/desktop/x2/advantages2.png);
+      }
+      &:nth-child(3)::before {
+        background-image: url(../images/advantages/desktop/x2/advantages3.png);
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
