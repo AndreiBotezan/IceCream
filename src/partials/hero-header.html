@@ -3,17 +3,20 @@
   <!--HEADER--->
   <header class="header">
     <div class="header__inner hero-container">
-      <img width="200" height="50" srcset="
+
+      <a href="#">
+        <img width="200" height="50" srcset="
               ./images/hero-header/logo.png 200w,
               ./images/hero-header/logo400.png 400w
             " src="./images/hero-header/logo.png" alt="logo" />
+      </a>
       <nav>
         <ul class="header__nav">
           <li><a href="#">Home</a></li>
-          <li><a href="./partials/customer-reviews.html">About us</a></li>
-          <li><a href="./partials/about-how-its-made.html">How it's made?</a></li>
-          <li><a href="./partials/products.html">Our products</a></li>
-          <li><a href="./partials/contacts-locations.html">Contact</a></li>
+          <li><a href="#customer-reviews">About us</a></li>
+          <li><a href="#about">How it's made?</a></li>
+          <li><a href="#products">Our products</a></li>
+          <li><a href="#contacts-locations">Contact</a></li>
         </ul>
       </nav>
       <button class="button--nav js-open-menu">
@@ -39,9 +42,11 @@
       </h1>
       <ul class="hero__inner__list">
         <li><button class="button--red">
-            <a href="#">Products</a></button></li>
+            <a href="#products">Products</a></button>
+        </li>
         <li>
-          <button class="button--white">How it's made?</button>
+          <button class="button--white">
+            <a href="#about">How it's made?</a></button>
         </li>
       </ul>
       <div class="hero__inner--left--div">
@@ -189,16 +194,16 @@
       <a class="link" href="#">Home</a>
     </li>
     <li class="mobile-menu__item">
-      <a class="link" href="#">About us</a>
+      <a class="link" href="#customer-reviews">About us</a>
     </li>
     <li class="mobile-menu__item">
-      <a class="link" href="#">How it's made?</a>
+      <a class="link" href="#about">How it's made?</a>
     </li>
     <li class="mobile-menu__item">
-      <a class="link" href="#">Our products</a>
+      <a class="link" href="#products">Our products</a>
     </li>
     <li class="mobile-menu__item">
-      <a class="link" href="#">Contact</a>
+      <a class="link" href="#contacts-locations">Contact</a>
     </li>
   </ul>
 </div>
