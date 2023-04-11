@@ -94,30 +94,27 @@
 }
 
 .gallery__grid {
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
   width: 100%;
   max-width: 320px;
+  min-width: 320px;
+  grid-gap: 2px;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
-    padding-left: 2px;
-    padding-right: 2px;
-    gap: 3px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding-left: 5px;
-    padding-right: 5px;
-    gap: 5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 10px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
   }
 }
