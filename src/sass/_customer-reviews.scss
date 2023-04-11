@@ -1,0 +1,205 @@
+.swiper {
+  width: 968px;
+  position: relative;
+  margin-bottom: 219px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 968px;
+  height: 138px;
+}
+
+.reviewers-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviewers-info::before {
+  content: '';
+  display: block;
+  background-image: url('../images/customer-reviews/red_dots.svg');
+  background-size: 32px 4px;
+  width: 32px;
+  height: 4px;
+}
+
+.description-container {
+  max-width: 968px;
+  padding: 32px 74px;
+  position: relative;
+  background-color: #fafafa;
+
+  .reviwers__description {
+    max-width: 968px;
+    text-align: center;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    position: relative;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent calc(100% - 1px),
+      #e1e1e1 calc(100% - 1px),
+      #e1e1e1 100%
+    );
+    background-size: 100% 29px;
+  }
+  .reviwers__description::before {
+    content: '';
+    background-image: url('../images/customer-reviews/quotation_mark.svg');
+    background-size: 54px 40px;
+    height: 54px;
+    width: 60px;
+    display: block;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    top: -25px;
+    left: -28px;
+  }
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -35px !important;
+}
+
+.swiper-pagination-bullet-active::before {
+  content: '';
+  display: block;
+  background-image: url('../images/customer-reviews/house.svg');
+  background-size: 15px 15px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 15px;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--markers-reviews-color);
+  // opacity: 0.5;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -42px !important;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: -42px !important;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 280px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .swiper {
+    width: 620px;
+    margin-bottom: 378px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 320px !important;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 0 !important;
+    left: auto;
+  }
+
+  .swiper-button-prev {
+    left: 0 !important;
+    right: auto;
+  }
+
+  .description-container .reviwers__description {
+    font-size: 14px;
+    line-height: 216%;
+    background: linear-gradient(
+        #0000 0% calc(100% - 1px),
+        #e1e1e1 calc(100% - 1px) 100%
+      )
+      0 0 / 100% 30px;
+  }
+  .reviewers-info__location {
+    font-size: 16px;
+    line-height: 186%;
+  }
+  .description-container {
+    padding: 37px 55px 44px 50px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .swiper {
+    width: 280px;
+    margin-bottom: 362px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 480px !important;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 0 !important;
+    left: auto;
+  }
+
+  .swiper-button-prev {
+    left: 0 !important;
+    right: auto;
+  }
+
+  .description-container .reviwers__description {
+    font-size: 12px;
+    line-height: 255%;
+    background: linear-gradient(
+        #0000 0% calc(100% - 1px),
+        #e1e1e1 calc(100% - 1px) 100%
+      )
+      0 0 / 100% 30px;
+  }
+  .reviewers-info__location {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  .description-container {
+    padding: 43px 58px 26px 65px;
+  }
+}
