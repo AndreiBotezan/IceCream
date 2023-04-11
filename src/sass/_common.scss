@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 :root {
   --primary-header-color: #ffa5ba;
   --main-color-dark: #d41443;
@@ -15,6 +16,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,10 +42,13 @@ img {
   display: block;
 }
 
-.container {
-  max-width: 480px;
-  margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .container {
+    // max-width: 480px;
+    margin: 0 auto;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
