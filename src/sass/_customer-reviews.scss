@@ -24,7 +24,7 @@
 .reviewers-info::before {
   content: '';
   display: block;
-  background-image: url(../images/customer-reviews/red_dots.svg);
+  background-image: url('../images/customer-reviews/red_dots.svg');
   background-size: 32px 4px;
   width: 32px;
   height: 4px;
@@ -57,7 +57,7 @@
   }
   .reviwers__description::before {
     content: '';
-    background-image: url(../images/customer-reviews/quotation_mark.svg);
+    background-image: url('../images/customer-reviews/quotation_mark.svg');
     background-size: 54px 40px;
     height: 54px;
     width: 60px;
