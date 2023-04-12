@@ -374,7 +374,7 @@
 
 .products-list__card:hover,
 .products-list__card:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 30px #90233ea1;
 }
 
 .about__product-overlay-cream,
@@ -443,7 +443,7 @@
 
   &:hover,
   &:focus {
-    background-color: #fff5f6;
+    background-color: #ecebeb;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     transform: scale(1.1);
