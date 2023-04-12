@@ -102,10 +102,19 @@
   }
 }
 
-.made-info__text-second {
+.made-info__text-second,
+.made-info__text-extra {
   @extend .made-info__textone;
   color: var(--primary-text-color);
   letter-spacing: 0.04em;
+}
+
+.made-info__text-extra {
+  display: none;
+}
+
+#more {
+  display: none;
 }
 
 .readmore-btn {
@@ -165,7 +174,8 @@
   }
 
   .made-info__textone,
-  .made-info__text-second {
+  .made-info__text-second,
+  .made-info__text-extra {
     font-weight: 500;
     font-size: 12px;
     line-height: 162%;
@@ -206,7 +216,8 @@
   }
 
   .made-info__textone,
-  .made-info__text-second {
+  .made-info__text-second,
+  .made-info__text-extra {
     font-weight: 500;
     font-size: 14px;
     line-height: 176%;
@@ -264,7 +275,8 @@
   }
 
   .made-info__textone,
-  .made-info__text-second {
+  .made-info__text-second,
+  .made-info__text-extra {
     transform: scale(1);
     transition: all 0.25s linear;
     &:hover {

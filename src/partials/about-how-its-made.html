@@ -30,11 +30,21 @@
         </p>
         <br>
         <br>
-        <p class="made-info__text-second">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button class="readmore-btn" type="button">Read more
-          <svg class="readmore-btn__icon" width="8" height="10">
+        <p class="made-info__text-second">Aliquam erat volutpat. Aenean accumsan
+          <span id="dots">...</span>
+          <span class="made-info__text-extra" id="more" style="display:none">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit.
+            Delectus sint voluptate doloremque molestias qui beatae natus,
+            laborum aut distinctio sapiente culpa nesciunt illum modi
+            aliquam, error rem eius dolorum. Enim! Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Placeat repellendus qui
+            error.
+          </span>
+        </p>
+        <button class="readmore-btn" type="button" onclick="myFunction()" id="myButton">Read more &gt;
+          <!-- <svg class="readmore-btn__icon" width="8" height="10">
             <use href="/src/images/about-images/icons.svg#readme-arrow"></use>
-          </svg>
+          </svg> -->
         </button>
       </div>
 
@@ -42,3 +52,4 @@
 
   </div>
 </section>
+<script src="/src/js/about.js"></script>
