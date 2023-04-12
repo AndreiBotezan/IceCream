@@ -244,6 +244,7 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
     &__list {
       display: flex;
       gap: 8px;
+      margin-top: 5px;
     }
   }
   .hero__inner--left {
@@ -314,6 +315,9 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
       transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
     }
+    .anchor-btn {
+      display: block;
+    }
   }
 }
 
@@ -364,6 +368,10 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
       }
       .button--white {
         margin-top: 0px;
+      }
+      .anchor-btn {
+        display: block;
+        margin-top: 4px;
       }
     }
     &__circle {
@@ -520,6 +528,9 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
       font-size: 16px;
       line-height: 1.31;
       padding: 11px 24px;
+    }
+    .anchor-btn {
+      display: block;
     }
   }
   .hero__inner--left--div {
@@ -801,6 +812,9 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
 .inner-order-form .product-order {
   position: relative;
   padding-top: 10px;
+  input {
+    text-align: center;
+  }
 }
 
 form {
