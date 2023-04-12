@@ -3,15 +3,20 @@
 :root {
   --primary-header-color: #ffa5ba;
   --main-color-dark: #d41443;
-  --font-primary: 'DM Sans', sans-serif;
-  --font-secondary: 'Titan One', sans-serif;
   --second-section-color: #fff5f6;
   --secondary-text-color: #000000;
   --primary-text-color: #907e82;
-  --button-white-color: #ffffff;
   --markers-reviews-color: #d9d9d9;
-}
+  --header-circle-color: #ffa5ba;
+  --background-mobile-menu: #e17992;
+  --accent-color: #d41443;
+  --button-white-color: #ffffff;
+  --background-reviews: #fafafa;
+  --hover-color: #ecebeb;
 
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Titan One', sans-serif;
+}
 * {
   box-sizing: border-box;
   margin: 0;
