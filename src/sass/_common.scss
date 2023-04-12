@@ -17,10 +17,22 @@
   --font-primary: 'DM Sans', sans-serif;
   --font-secondary: 'Titan One', sans-serif;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-color: #e17992 #ffa5ba;
+  scrollbar-width: thin;
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #ffa5ba;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #e17992;
+    border-radius: 5px;
+  }
 }
 
 html {
