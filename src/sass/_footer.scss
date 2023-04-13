@@ -27,6 +27,7 @@
     }
     &--ice-cream {
       transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      margin-right: 10px;
     }
   }
 
@@ -220,6 +221,7 @@
   .footer-block-left:hover .slogan-title--ice-cream {
     transform: translate(55px);
   }
+
   .footer-block-left:hover .slogan-title--made {
     color: #d41443;
     transform: translate(-170px, 27px);

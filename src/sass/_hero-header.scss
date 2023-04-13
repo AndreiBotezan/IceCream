@@ -244,7 +244,7 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
     &__list {
       display: flex;
       gap: 8px;
-      margin-top: 5px;
+      margin-top: 24px;
     }
   }
   .hero__inner--left {
@@ -372,6 +372,9 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
       .anchor-btn {
         display: block;
         margin-top: 4px;
+      }
+      &__list {
+        margin-top: 0;
       }
     }
     &__circle {
@@ -507,6 +510,9 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
     }
     &__inner {
       height: calc(100% - 100px);
+      &__list {
+        margin-top: 4px;
+      }
     }
     &__circle {
       width: 534px;
@@ -779,7 +785,6 @@ $sway-type: 'sway-left-to-right', 'sway-right-to-left';
     rgba(255, 245, 246, 0.4),
     rgba(255, 245, 246, 0.4)
   );
-
   transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -884,7 +889,6 @@ form {
   margin-top: 10px;
 
   input {
-    font-size: 13px;
     margin-top: 10px;
     padding-left: 5px;
     width: 100%;
@@ -897,7 +901,8 @@ form {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &::placeholder {
-      color: var(--accent-color);
+      color: var(--font-secondary);
+      font-size: 12px;
     }
     &:hover,
     &:focus {
@@ -1016,6 +1021,10 @@ form {
   .form-products {
     input {
       font-size: 16px;
+      &::placeholder {
+        color: var(--font-secondary);
+        font-size: 14px;
+      }
     }
   }
 }
