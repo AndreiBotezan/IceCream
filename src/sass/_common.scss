@@ -1,1 +1,78 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --primary-header-color: #ffa5ba;
+  --main-color-dark: #d41443;
+  --second-section-color: #fff5f6;
+  --secondary-text-color: #000000;
+  --primary-text-color: #907e82;
+  --markers-reviews-color: #d9d9d9;
+  --header-circle-color: #ffa5ba;
+  --background-mobile-menu: #e17992;
+  --accent-color: #d41443;
+  --button-white-color: #ffffff;
+  --background-reviews: #fafafa;
+  --hover-color: #ecebeb;
+
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Titan One', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: #e17992 #ffa5ba;
+  scrollbar-width: thin;
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #ffa5ba;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #e17992;
+    border-radius: 5px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    // max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}

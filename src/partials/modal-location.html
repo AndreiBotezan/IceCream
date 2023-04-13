@@ -1,0 +1,87 @@
+<!--Location modal-->
+
+<div class="locations-backdrop is-hidden" data-location-modal>
+  <div class="locations-modal">
+    <button class="locations-modal__btn" data-location-modal-close>
+      <svg class="locations-modal__btn-icon" width="14px" height="14px">
+        <use href="./images/hero-header/symbol.svg#close-btn"></use>
+      </svg>
+    </button>
+    <p class="location-modal__title">
+      Visit us for a tasty experience at best price and high quality
+    </p>
+    <iframe class="location-modal__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.3975920856387!2d-75.5271695!3d40.576978499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c43a77fb348563%3A0xecdae7767425561e!2s3512%20Hamilton%20Blvd%2C%20Allentown%2C%20PA%2018103%2C%20USA!5e0!3m2!1sen!2sro!4v1681063236529!5m2!1sen!2sro"
+      aria-hidden="false" tabindex="0" loading="lazy" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--Franchise modal-->
+
+<div class="contacts-backdrop is-hidden" data-contacts-modal>
+  <div class="contacts-modal">
+    <button class="contact-modal__btn" data-contacts-modal-close>
+      <svg class="contact-modal__btn-icon" width="14px" height="14px">
+        <use href="./images/hero-header/symbol.svg#close-btn"></use>
+      </svg>
+    </button>
+    <b class="franchise-form-title">Become our partner</b>
+    <form class="franchise-modal-form">
+      <div class="franchise-modal-form-data">
+        <label class="franchise-modal-form__group">
+          <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="John" />
+          <span class="franchise-modal-form__label">Name</span>
+        </label>
+
+        <label class="franchise-modal-form__group">
+          <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Doe" />
+          <span class="franchise-modal-form__label">Surname</span>
+        </label>
+
+        <label class="franchise-modal-form__group">
+          <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="+40000000000" />
+          <span class="franchise-modal-form__label">Phone</span>
+        </label>
+
+        <label class="franchise-modal-form__group">
+          <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="info@gmail.com" />
+          <span class="franchise-modal-form__label">Mail</span>
+        </label>
+
+        <label class="franchise-modal-form__group">
+          <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Bucharest" />
+          <span class="franchise-modal-form__label">Franchise city</span>
+        </label>
+
+        <label class="franchise-modal-form__group">
+          <input class="franchise-modal-form__input" type="text" name="user-name" placeholder="Cafe/Foodtruck" />
+          <span class="franchise-modal-form__label">Type of category</span>
+        </label>
+      </div>
+
+      <label class="franchise-textarea__group">
+        <textarea class="franchise-modal-form__message" name="user-message" rows="3"
+          placeholder="Type message"></textarea>
+        <span class="franchise-modal-form__label franchise-modal-form__label--textarea">Your message</span>
+      </label>
+
+      <label class="franchise-modal-form__policy-group">
+        <input class="franchise-modal-form__checkbox visually-hidden" type="checkbox" />
+        <span class="franchise-modal-form__custom-checkbox">
+          <svg class="franchise-modal-form__custom-checkbox-icon" width="8" height="8" viewBox="0 0 32 32">
+            <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+          </svg>
+        </span>
+        <span class="franchise-modal-form__policy-desc">
+          I have read and agree to the
+          <a class="franchise-modal-form__policy-link" href="#">Terms and Conditions</a>
+        </span>
+      </label>
+
+      <button class="franchise-modal-form__submit-btn contact-btn" type="submit" data-contacts-modal-close>
+        Send a request
+      </button>
+    </form>
+  </div>
+</div>
+</div>

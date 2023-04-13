@@ -1,0 +1,57 @@
+<!-- About (How is made) Section-->
+
+
+<section class="about-section" id="about">
+  <div class="container">
+    <p class="about-label">tradition and love</p>
+    <h2 class="about-title">how it’s made?</h2>
+    <div class="made">
+      <div class="made-image">
+        <picture>
+          <source media="screen and (min-width: 1280px)"
+            srcset="/src/images/about-images/cow@1x-D.png 1x, /src/images/about-images/cow@2x-D.png 2x" />
+          <source media="screen and (max-width: 767px)"
+            srcset="/src/images/about-images/cow@1x-M.png 1x, /src/images/about-images/cow@2x-M.png 2x" />
+          <source media="screen and (min-width: 768px)"
+            srcset="/src/images/about-images/cow@1x-T.png 1x, /src/images/about-images/cow@2x-T.png 2x" />
+          <img class="made-image__principal" src="/src/images/about-images/cow@2x-M.png" alt="Cow and milk" />
+        </picture>
+
+      </div>
+      <div class="made-info">
+        <p class="made-info__textone">At our ice cream shop, we create handcrafted treats using locally-sourced,
+          high-quality ingredients. Our ice cream is
+          churned to perfection to ensure a creamy, flavorful experience in every scoop. With classic and unique flavors
+          like
+          blueberry cheesecake and salted caramel, we offer options for everyone, including vegan and dairy-free
+          choices.
+        </p>
+        <br>
+        <p class="made-info__text-second">For a refreshing pick-me-up, try our iced coffee made with premium beans
+          served over ice. And when you're craving
+          something sweet, indulge in our milkshakes made with rich, creamy ice cream topped with whipped cream and
+          sprinkles.
+        </p>
+        <br>
+        <br>
+        <p class="made-info__text-second">We believe in doing things the right way
+          <span id="dots">...</span>
+          <span class="made-info__text-extra" id="more" style="display:none">,
+            which is why we make our ice cream fresh in small batches every day. Our
+            commitment to quality extends to our customer service, making your visit a memorable experience. Come visit
+            us for a
+            sweet escape!
+          </span>
+        </p>
+        <button class="readmore-btn" type="button" onclick="myFunction()" id="myButton">Read more &gt;
+          <!-- <svg class="readmore-btn__icon" width="8" height="10">
+            <use href="/src/images/about-images/icons.svg#readme-arrow"></use>
+          </svg> -->
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<script src="/src/js/about.js"></script>
